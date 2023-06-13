@@ -10,6 +10,7 @@ let price = document.querySelector('#price')
 let picture = document.querySelector('#picture')
 let adminInput = document.querySelector('#adminInput')
 let title = document.querySelector('#title')
+let sorting = document.querySelector('#sorting')
 let dotoDelete;
 
 // Delete button
@@ -66,6 +67,13 @@ function addData(e){
     title.value = ''
     bookData()
     localStorage.setItem('products', JSON.stringify(products))
+}
+
+sorting.addEventListener("click", sortFunc )
+function sortFunc(){
+    products.sort((a,b) => { 
+        return a.cost - b.id
+    })
 }
 
 function bookData(){
