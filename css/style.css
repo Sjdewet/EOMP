@@ -7,7 +7,16 @@ body {
 .navbar{
   width: 100%;
   height: 10%;
-  background-color: transparent;
+  background-color:#0077b6;
+}
+
+.footer{
+  background-color:#0077b6;
+  font-family: var(--bs-font-sans-serif);
+}
+
+a{
+  text-decoration: none;
 }
 
 #h1{
@@ -27,9 +36,11 @@ body {
 }
 
 body{
-  background: url("https://i.postimg.cc/1zVTYcHF/pic.jpg") center no-repeat;
+  background: url("") center no-repeat;
+  background-color: #8abcd7;
   background-size: cover;
   background-position-y: 9%;
+  scroll-behavior: smooth;
 }
 
 
@@ -41,7 +52,22 @@ body{
     border-radius: 9px;
   }
 
-
-  .laptops{
-    text-align: center;
+  #pic{
+    width: 10rem;
   }
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  width: 70%;
+}
+
+
+
+
+  
