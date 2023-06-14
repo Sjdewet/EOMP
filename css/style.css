@@ -59,12 +59,12 @@ body{
 .contactForm {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  width: 70%;
 }
 
 form {
-  width: 70%;
+  width: 100%;
 }
 
 #button{

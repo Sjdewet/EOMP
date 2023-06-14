@@ -86,7 +86,7 @@ let products = JSON.parse(localStorage.getItem('products')) ?
   <div class="card-body">
     <h5 class="card-title">${reader.title}</h5>
     <p class="card-text">${reader.name}</p>
-    <a href="#" class="btn btn-primary">Add to cart</a>
+    <a href="../checkout.html" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
      `
