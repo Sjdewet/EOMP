@@ -93,29 +93,37 @@
 //   document.getElementsByClassName('cart-total-price')[0].innerText = 'R' + total
 // }
 
-let bookslist = JSON.parse(localStorage.getItem('books'))
-let adminInput = document.querySelector("#checkoutInput");
+// let bookslist = JSON.parse(localStorage.getItem('books'))
+// let adminInput = document.querySelector("#checkoutInput");
 
-function bookData() {
-    adminInput.innerHTML = "";
-    bookslist.forEach((content) => {
-      adminInput.innerHTML += `
-                      <tr>
-                        <th>${content.id}</th>
-                        <th><img src="${content.picture}" class="" style="height:22rem;" alt=""></th>
-                        <td>${content.name}</td>
-                        <td>${content.title}</td>
-                        <td>${content.cost}</td>
-                        <td>
-                        <button
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        id="delBtn">Edit</button></td>
-                          <td><button id="delete_btn" class="close-btn">Delete</button>
-                        </td>
-                      </tr>
-          `
-    });
-}
-bookData()
+// function bookData() {
+//     adminInput.innerHTML = "";
+//     bookslist.forEach((content) => {
+//       adminInput.innerHTML += `
+//                       <tr>
+//                         <th>${content.id}</th>
+//                         <th><img src="${content.picture}" class="" style="height:22rem;" alt=""></th>
+//                         <td>${content.name}</td>
+//                         <td>${content.title}</td>
+//                         <td>${content.cost}</td>
+//                         <td>
+//                         <button
+//                         type="button"
+//                         data-bs-toggle="modal"
+//                         data-bs-target="#exampleModal"
+//                         id="delBtn">Edit</button></td>
+//                           <td><button id="delete_btn" class="close-btn">Delete</button>
+//                         </td>
+//                       </tr>
+//           `
+//     });
+// }
+// bookData()
+
+
+    // Check if products exist in local storage; if not, use sample data
+ 
+// ************************************************
+// Shopping Cart API
+// ************************************************
+

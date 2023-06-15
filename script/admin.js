@@ -29,19 +29,54 @@ function deleteItem(event) {
   bookData();
 }
 // Edit button
-function editItem(){
-    editbtn = [...document.querySelectorAll('.edit-btn')];
-    editbtn.forEach((item)=>{
-        item.addEventListener('click', editTodoItem)
-    })
-    }
-    function editTodoItem(){
-        let update= prompt('Enter new Item:');
-        let index = editbtn.indexOf(event.target);
-        clientItems[index].name = update();
-        localStorage.setItem("itemlist", JSON.stringify(clientItems))
-        bookData();
-    }
+function editItem() {
+  editbtn = [document.querySelectorAll(".edit-btn")];
+  editbtn.forEach((item) => {
+    item.addEventListener("click", editTodoItem);
+  });
+}
+function editTodoItem() {
+  let update = prompt("Enter new Item:");
+  // let index = editbtn.indexOf(event.target);
+  if (constructor(product)) {
+    this.id = product.id;
+    this.name = document.querySelector(`#Book-name${product.id}`).value;
+    this.author = document.querySelector(`#author${product.id}`).value;
+    this.amount = document.querySelector(`#amount${product.id}`).value;
+    this.category = document.querySelector(`#category${product.id}`).value;
+    let itemIndex = product.findIndex((data) => {
+      return data.id === product.id;
+    });
+    // Update
+    clientItems[itemIndex] = Object.assign({}, this);
+    localStorage.setItem("itemList", JSON.stringify(clientItems));
+    display();
+    location.reload();
+  }
+
+  clientItems[index].name = update();
+  localStorage.setItem("itemlist", JSON.stringify(clientItems));
+  bookData();
+}
+
+// editing already put items
+class EditProduct {
+  constructor(product) {
+    this.id = product.id;
+    this.name = document.querySelector(`#Book-name${product.id}`).value;
+    this.author = document.querySelector(`#author${product.id}`).value;
+    this.amount = document.querySelector(`#amount${product.id}`).value;
+    this.category = document.querySelector(`#category${product.id}`).value;
+    let itemIndex = product.findIndex((data) => {
+      return data.id === product.id;
+    });
+    // Update
+    clientItems[itemIndex] = Object.assign({}, this);
+    localStorage.setItem("itemList", JSON.stringify(clientItems));
+    display();
+    location.reload();
+  }
+}
 
 // function EditProducts(item) {
 //   this.id = item.id;
