@@ -114,17 +114,12 @@ function bookData() {
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      id="delBtn"
-                    >
-                      Edit
-                    </button>
+                      id="delBtn">Edit</button>
                         <button id="delete_btn" class="close-btn">Delete</button>
                       </td>
                     </tr>
         `;
   });
-  localStorage.getItem("products");
   deleteButtons();
 }
-
 bookData();

@@ -11,6 +11,8 @@ body{
   background-position-y: 9%;
 }
 
+
+
 #pic{
     width: 10rem;
   }
@@ -30,3 +32,15 @@ body{
 #clear{
   background-color: #0077b6;
 }
+
+.navbar{
+  width: 100%;
+  height: 10%;
+  background-color:#0077b6;
+}
+
+
+
+
+
+
